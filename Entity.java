@@ -23,6 +23,14 @@ public class Entity {
     }
 
     @Override
+    public String toString() {
+        return "{" +
+                "str='" + str + '\'' +
+                ", value=" + value +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o)
             return true;
@@ -34,6 +42,8 @@ public class Entity {
 
     @Override
     public int hashCode() {
-        return Objects.hash(str, value);
+        return Objects.hash(value);
     }
 }
+
+
